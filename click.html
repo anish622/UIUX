@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <script>
+        function submitInfo() {
+            if (document.q2.log.value == "") {
+                alert("Enter login name");
+            } else if (document.q2.pass.value == "") {
+                alert("Enter your password");
+            } else {
+                alert("successfull")
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="q2" onsubmit="submitInfo(); return false;">
+        Welcome to:
+        <h1>Missile Technology (P) Ltd.</h1>
+        <hr> Login name:
+        <input type="text" name="log">
+
+        <br><br> Password:
+        <input type="password" name="pass">
+
+        <br><br>
+
+        <input type="submit" value="submit" onclick="submitInfo">
+        <input type="reset" value="reset" name="reset"></form>
+</body>
+
+</html>
